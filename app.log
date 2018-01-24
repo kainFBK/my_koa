@@ -1,0 +1,70 @@
+nohup: ignoring input
+
+> my-app@0.1.0 start /root/workspace/my-app
+> node bin/www
+
+postbill
+gettreasurytotal
+  <-- GET /api/gettreas
+[ RowDataPacket {
+    userid: 1,
+    monthlymoney: 2000,
+    monthlycom: 1200,
+    usedmoney: 0,
+    usedcom: 480,
+    daycom: '9.4',
+    bankbalance: 0 } ]
+  --> GET /api/gettreas 200 21ms 111b
+  <-- GET /api/gettreas
+[ RowDataPacket {
+    userid: 1,
+    monthlymoney: 2000,
+    monthlycom: 1200,
+    usedmoney: 0,
+    usedcom: 480,
+    daycom: '9.4',
+    bankbalance: 0 } ]
+  --> GET /api/gettreas 200 3ms 111b
+  <-- GET /api/gettreas
+[ RowDataPacket {
+    userid: 1,
+    monthlymoney: 2000,
+    monthlycom: 1200,
+    usedmoney: 0,
+    usedcom: 480,
+    daycom: '9.4',
+    bankbalance: 0 } ]
+  --> GET /api/gettreas 200 2ms 111b
+  <-- GET /api/gettreas
+[ RowDataPacket {
+    userid: 1,
+    monthlymoney: 2000,
+    monthlycom: 1200,
+    usedmoney: 0,
+    usedcom: 480,
+    daycom: '9.4',
+    bankbalance: 0 } ]
+  --> GET /api/gettreas 200 2ms 111b
+  <-- GET /api/gettreas
+[ RowDataPacket {
+    userid: 1,
+    monthlymoney: 2000,
+    monthlycom: 1200,
+    usedmoney: 0,
+    usedcom: 480,
+    daycom: '9.4',
+    bankbalance: 0 } ]
+  --> GET /api/gettreas 200 3ms 111b
+  <-- GET /api/gettreas
+[ RowDataPacket {
+    userid: 1,
+    monthlymoney: 2000,
+    monthlycom: 1200,
+    usedmoney: 0,
+    usedcom: 513,
+    daycom: '40.4',
+    bankbalance: 0 } ]
+  --> GET /api/gettreas 200 1ms 112b
+  <-- POST /api/postbill
+2017-09-14 15:41:2午餐116
+  --> POST /api/postbill 200 8ms 7b
