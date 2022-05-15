@@ -27,6 +27,7 @@
     "mysql": "^2.14.1",
     "mysql-co": "0.0.4",
     "pug": "^2.0.0-rc.1",
+    "request": "^2.88.0",
     "sequelize": "^4.7.5",
     "superagent": "^3.8.1"
   },

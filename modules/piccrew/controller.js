@@ -65,16 +65,16 @@ module.exports.showpic = function showpic() {
       // }).on('error',(e) => {
       //   console.error(e);
       // });
-      const res = new Object();
+      let res = new Object();
 
       var siteurl = ctx.request.body.url;
-      if(siteurl.indexOf('giantessbooru.com') >= 0){
-        console.log(siteurl);
-        res = await request.get(siteurl)
-        .set('Cookie','__cfduid=d1acef27a3a7db8c502211ad8f6ba069c1516345827; __utmz=45162674.1516345827.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); agreed=true; gtsb_language=zh; __utma=45162674.1238922163.1516345827.1516353744.1516590228.5; __utmc=45162674; __utmt=1; __utmb=45162674.2.10.1516590228');
-      }else{
+      // if(siteurl.indexOf('giantessbooru.com') >= 0){
+      //   console.log(siteurl);
+      //   res = await request.get(siteurl)
+      //   .set('Cookie','__cfduid=d1acef27a3a7db8c502211ad8f6ba069c1516345827; __utmz=45162674.1516345827.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); agreed=true; gtsb_language=zh; __utma=45162674.1238922163.1516345827.1516353744.1516590228.5; __utmc=45162674; __utmt=1; __utmb=45162674.2.10.1516590228');
+      // }else{
         res = await request.get(siteurl);
-      }
+      //}
         console.log(res);
 
         let $ = cheerio.load(res.text, {
